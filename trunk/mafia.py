@@ -1,9 +1,10 @@
-#!/usr/bin/python2.5
+#!/usr/bin/python
 import cgi
-import cgitb
-import bhmt
 
-cgitb.enable()
+#import cgitb
+#cgitb.enable()
+
+import bhmt
 
 PATH_DATA = '/home/simon/public_html/mafia' 
 
@@ -70,14 +71,7 @@ bookmarklets = [
      "Use this to send a Facebook message to someone")]
 
 
-
-s = """Content-type: text/html
-
-<html>
-<head>
-<title>Bobby Heartrate's Mafia Tools</title>
-<link rel="stylesheet" type="text/css" href="/simon/mafia/style.css" />
-</head>
+main_content = """
 <body>
 <div id="main">
 <h1 id="logoh1"><img id="logo" src="/simon/mafia/bobby_logo.png" alt="Bobby Heartrate's Mafia Tools" /></h1>
@@ -92,6 +86,8 @@ s = """Content-type: text/html
 </body>
 </html>
 """
+
+s = bhmt.head() + bhmt.body(bhmt.menu("index"), main_content)
 
 print(s)
 
