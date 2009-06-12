@@ -1,0 +1,473 @@
+# This file contains some data for heartrate.se
+#
+# 
+
+- group: mafiawars
+  title: Mafia Wars user actions
+  description: These bookmarklets do Mafia Wars actions on a user from their Facebook or Mafia Wars profile. 
+  default_bookmarklet_code: bookmarklets/user_action.js
+  actions: 
+   - action: add
+     url: http://apps.facebook.com/inthemafia/status_invite.php?from=$ID
+     help: add $NAME to your mafia
+     bookmarklet:
+       title: Add to Mafia
+       info:  Adding user with id $ID...
+       help: >
+          Use this to add a friend who also plays Mafia Wars. Visit their Facebook profile page and then click "Add to Mafia". 
+          The page should now say "Adding user with id <em><tt>nnn</tt></em>..." and then go right into Mafia Wars. Then the person 
+          should be added to your mafia, and Mafia Wars will say that the person has been added. Your mafia count, however, is not immediately updated.
+          <p><strong>Note:</strong> You have to be Facebook friends with the person you're adding for this to work. 
+          After adding the person to your mafia, you can safely 
+          remove the person as your Facebook friend, if you want.</p>
+       
+   - action: add_nw
+     bookmarklet:
+       title: "Add to Mafia: NW"
+       help:  Add to Mafia in a new window &ndash; like the above, but opens up your link in a new window.
+       code:  bookmarklets/add_to_mafia_nw.js   
+      
+   - action: add_and_remove
+     bookmarklet:
+       title: Add and Remove
+       help:  Add to Mafia in a new window, then open up the "Remove Friend" dialog. For the serious fast-adder.
+       code:  bookmarklets/add_and_remove.js
+     
+   - action: switch
+     url: http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=stats&xw_action=view&user=$ID
+     bookmarklet:
+       title: Switch Profile
+       code:  bookmarklets/switch_profile.js
+       help: Use this to switch between a person's Facebook profile and their Mafia Wars profile. It also works from an "add friend"-page, such as <a href="http://www.facebook.com/addfriend.php?id=1463977030">this</a>. However, it does not work from your <em>own</em> Mafia Wars profile.
+        
+   - action: user
+     function: action_do_user
+     help: view $NAME's sweetlinks
+     bookmarklet:
+       title: Action
+       help:  Toolbar full? Here's the one bookmarklet to cover them all. Use it on a person's profile page, then select action!
+    
+   - action: profile
+     url: http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=stats&xw_action=view&user=$ID
+     help: view $NAME's Mafia Wars profile
+         
+   - action: promote
+     url: http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=group&xw_action=view&promote=yes&uid=$ID
+     help: promote $NAME to your Top Mafia
+     bookmarklet:
+       title: Promote
+       info:  Promote user with id $ID...
+       help:  Use this to add someone to your Top Mafia.
+       
+   - action: attack
+     url: http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=fight&xw_action=attack&opponent_id=$ID
+     help: attack $NAME
+     bookmarklet:
+       title: Attack
+       info:  Attack user with id $ID...
+       help:  Use this to attack someone.
+     
+   - action: punch
+     url: http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=fight&xw_action=punch&action=punch&opponent_id=$ID
+     help: punch $NAME in the face
+     bookmarklet:
+       title: Punch
+       info:  Punch user with id $ID...
+       help:  Use this to punch someone in the face.
+     
+   - action: hitlist
+     url: http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=hitlist&xw_action=set&target_id=$ID
+     help: add $NAME to the hit list
+     bookmarklet:
+       title: Hitlist
+       info:  Hitlist user with id $ID...
+       help:  Use this to hitlist someone. It's also useful to see if the person has already been killed, without spending a stamina point.
+       
+   - action: rob
+     url: http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=racket&xw_action=view&opponent_id=$ID
+     help: rob $NAME's properties
+     bookmarklet:
+       title: Rob
+       info:  Rob user with id $ID...
+       help:  Use this to open up the page where you can rob this person's properties.
+     
+   - action: give_help_to
+     url: http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=job&xw_action=give_help&target_id=$ID
+     help: give help on a job to $NAME
+     bookmarklet:
+       title: Give Help
+       info:  Give user with id $ID help on a job...
+       help:  Use this to give this person help on a job. Don't be late!
+     
+   - action: send_energy_to
+     url: http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=group&xw_action=energy&fid=$ID
+     help: send energy to $NAME
+     bookmarklet:
+       title: Send Energy
+       info:  Send energy to user with id $ID...
+       help:  Use this to send energy to this person. If the person already got energy within 24 hours, you will just get a Mafia Wars screen.
+     
+   - action: give
+     function: action_give
+     help: give stuff to $NAME
+     bookmarklet:
+       title: Gift
+       code: bookmarklets/gift.js
+       help: Use this to give a collection item or loot item to someone. This takes you to a page on heartrate.se where you can choose a gift to give to that person. If you'd rather type in the ID yourself than use the bookmarklet, just go <a href="/gift/">here</a>.
+
+- group: mafiawars_misc
+  title: Mafia Wars helper bookmarklets
+  description: 
+  actions:            
+   - action: mike
+     bookmarklet:
+       title: Mike
+       code:  bookmarklets/mafiamike.js
+       help:  Mafia Mike's buyer! Install bookmarklet, go to <a href="http://apps.facebook.com/inthemafia/">Mafia Wars</a>, press bookmarklet. Lots of Mafia Mike's will be bought. Does not work in Internet Explorer.
+       
+   - action: add_all
+     bookmarklet:
+       title: Add All
+       code:  bookmarklets/add_all_unadded.js
+       help:  Tries to add all friends who aren't already in your mafia. Install bookmarklet, go to <a href="http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=recruit&xw_action=view">recruit page</a>, press bookmarklet. It will ask for a delay time between requests. Too low values of this might make Facebook think you're a spammer. Use at own risk, as usual. Does not work in Internet Explorer.
+       
+   - action: jobcalc
+     bookmarklet:
+       title: Jobcalc
+       code: bookmarklets/jobcalc.js
+       help: Compute the ratio of experience points needed to level up to available energy. To maximize energy usage, pick jobs that have a ratio not exceeding this one.
+      
+   - action: analyze
+     bookmarklet:
+       title: Analyze
+       code: bookmarklets/analyze.js
+       help: Analyze your fights using the <a href="http://www.mafia-wars.info/">Combat Calculator</a>! Run this after a fight and follow the instructions. Alternatively, go <a href="http://helgo.net/cgi-bin/simon/mafia/fight.py">here</a> and follow the instructions.
+     
+   - action: hl
+     bookmarklet:
+       title: HL
+       code:
+       extra_content: >
+         <div class="acont">
+         <input style="margin: 5px 20px" id="hl_amount" type="text" size="8" value="1000000" onkeyup="hitlist_amount()" />
+         </div>
+       help: Use this on hitlisting pages to quickly set the bounty to <span id="hl_amount_span"></span>, or the amount of your choice (edit the text field below the bookmarklet before installing it). The bookmarklet will set the "Hit List Bounty Amount" field and then press the "Set Bounty" button for you. Saves a couple of seconds; to some of us, who do a lot of hitlisting, that's important.
+
+- group: facebook
+  title: Facebook user actions
+  description: These do Facebook actions from a user's profile.
+  actions:
+   - action: fb
+     url: http://www.facebook.com/profile.php?id=$ID
+     help: view $NAME's Facebook profile
+    
+   - action: fbadd
+     url: http://www.facebook.com/addfriend.php?id=$ID
+     help: request Facebook friendship with $NAME\
+     bookmarklet:
+       title: Add to FB
+       code:  bookmarklets/fb_add.js   
+       help:  Use this to request Facebook friendship with someone.
+    
+   - action: fbremove
+     bookmarklet:
+       title: Remove from FB
+       code:  bookmarklets/fb_remove.js
+       help:  Use this to remove someone from your Faceebok friends. At the moment, this only works on Facebook profiles, so all it does is saves you a little bit of scrolling. 
+       
+   - action: message
+     url: http://www.facebook.com/inbox/?compose&id=$ID
+     help: message $NAME on Facebook
+     bookmarklet:
+       title: Message
+       info: Message user with id $ID...
+       help: Use this to send a Facebook message to someone.
+       code: bookmarklets/user_action.js
+   
+- group: facebook_misc
+  title: Facebook miscellaneous
+  description: Facebook bookmarklets that work on other pages.
+  actions:
+   - action: confirm_requests
+     bookmarklet:
+       title: Confirm All
+       help: Confirm all friend requests that are visible on <a href="http://www.facebook.com/reqs.php#friend">your requests page</a>. Written by Chris Dawson as <a href="http://userscripts.org/scripts/review/39282">a Greasemonkey script</a>. This one will only work if your Facebook language setting is English!
+       code: bookmarklets/confirm_requests.js
+       
+   - action: unfuck_links
+     bookmarklet_not_yet:
+       title: Unfuck Links
+       help: Unfuck the links on a Facebook page.
+       code: bookmarklets/unfuck_links.js
+          
+# These are not to be listed anywhere
+- group: hidden
+  actions:
+   - action: set
+     function: action_set
+     no_user: yes
+
+- group: vampirewars
+  prefix: vampires
+  title: Vampire Wars actions
+  description: These bookmarklets do Vampire Wars actions from a user's Facebook or Mafia Wars profile. 
+  default_bookmarklet_code: bookmarklets/user_action.js
+  actions:
+   - action: add
+     url: http://apps.facebook.com/vampiresgame/status_invite.php?from=$ID
+     bookmarklet:
+       title: Add to Clan
+       info:  Adding user with id $ID...
+       help: Use this to add a friend who also plays Vampire Wars. 
+       	
+   - action: add_all
+     bookmarklet:   
+       title: V Add All
+       code:  bookmarklets/vw_add_all_unadded.js
+       help:  Tries to add all friends who aren't already in your clan. Install bookmarklet, go to your <a href="http://apps.facebook.com/vampiresgame/recruit.php">Vampire Wars recruit page</a>, press bookmarklet. It will ask for a delay time between requests. Too low values of this might make Facebook think you're a spammer. Use at own risk, as usual. Does not work in Internet Explorer. When a user is not playing Vampire Wars, it'll say that it gets an unknown result.
+     
+   - action: profile
+     url: http://apps.facebook.com/vampiresgame/stats.php?user=$ID
+     bookmarklet_not_yet:
+       title: Switch Profile
+       code:  bookmarklets/switch_profile.js
+       help: Use this to switch between a person's Facebook profile and their Vampire Wars profile. It also works from an "add friend"-page, such as <a href="http://www.facebook.com/addfriend.php?id=1463977030">this</a>. However, it does not work from your <em>own</em> Vampire Wars profile.
+       
+   - action: attack
+     url: http://apps.facebook.com/vampiresgame/fight.php?opponent_id=$ID&action=attack
+     help: attack $NAME
+     bookmarklet:
+       title: V Attack
+       info:  Attack user with id $ID...
+       help:  Use this to attack someone.
+       
+   - action: punch
+     url: http://apps.facebook.com/vampiresgame/fight.php?opponent_id=$ID&action=punch
+     help: bite $NAME
+     bookmarklet:
+       title: Bite
+       info:  Bite user with id $ID...
+       help:  Use this to bite someone.
+       
+   - action: hitlist
+     url: http://apps.facebook.com/vampiresgame/hits.php?action=set&target_id=$ID
+     help: add $NAME to the hit list
+     bookmarklet:
+       title: V Hitlist
+       info:  Hitlist user with id $ID...
+       help:  Use this to hitlist someone.
+       
+- group: specialforces
+  prefix: specialforces
+  title: Special Forces actions
+  description: These bookmarklets do Special Forces actions from a user's Facebook or Mafia Wars  profile.
+  default_bookmarklet_code: bookmarklets/user_action.js
+  
+  actions:
+   - action: add
+     url: http://apps.facebook.com/specialforces/status_invite.php?from=$ID
+     bookmarklet:
+       title: Add to Squad
+       info:  Adding user with id $ID...
+       help:  Use this to add a friend who also plays Special Forces. 
+          
+   - action: profile
+     url: http://apps.facebook.com/specialforces/remote/html_server.php?&xw_controller=stats&xw_action=view&user=$ID
+     bookmarklet_not_yet:
+       title: Switch Profile
+       code:  bookmarklets/switch_profile.js
+       help: Use this to switch between a person's Facebook profile and their Mafia Wars profile. It also works from an "add friend"-page, such as <a href="http://www.facebook.com/addfriend.php?id=1463977030">this</a>. However, it does not work from your <em>own</em> Mafia Wars profile.
+        
+   - action: attack
+     url: http://apps.facebook.com/specialforces/remote/html_server.php?xw_controller=fight&xw_action=attack&opponent_id=$ID&action=attack
+     help: attack $NAME
+     bookmarklet:
+       title: SF Attack
+       info:  Attack user with id $ID...
+       help:  Use this to attack someone.
+     
+   - action: punch
+     url: http://apps.facebook.com/specialforces/remote/html_server.php?xw_controller=fight&xw_action=punch&opponent_id=$ID&action=punch
+     help: ambush $NAME
+     bookmarklet:
+       title: Ambush
+       info:  Ambush user with id $ID...
+       help:  Use this to ambush someone.
+     
+   - action: hitlist
+     url: http://apps.facebook.com/specialforces/remote/html_server.php?xw_controller=hitlist&xw_action=set&target_id=$ID
+     help: post a bounty on $NAME
+     bookmarklet:
+       title: SF Bounty
+       info:  Post a bounty on user with id $ID...
+       help:  Use this to post a bounty on someone.
+       
+
+- group: various
+  prefix: various
+  title: User actions for various games
+  description: These bookmarklets do actions in various games from a user's Facebook or Mafia Wars profile. This includes <a href="http://apps.facebook.com/streetracinggame/">Street Racing</a>, <a href="http://apps.facebook.com/piratesrule/">Pirates</a> and a whole bunch of other apps.
+  default_bookmarklet_code: bookmarklets/user_action.js
+  actions:
+   - action: sr_add
+     url: http://apps.facebook.com/streetracinggame/index.php?action=statusrecruit&from=$ID
+     help: add $NAME to your Street Racing crew
+     bookmarklet:
+       title: SR Add to Crew
+       
+   - action: sr_attack
+     url: http://apps.facebook.com/streetracinggame/fight.php?opponent_id=$ID&action=attack
+     help: attack $NAME in Street Racing
+     bookmarklet:
+       title: SR Attack
+     
+   - action: sr_punch
+     url: http://apps.facebook.com/streetracinggame/fight.php?opponent_id=$ID&action=punch
+     help: smack talk $NAME in Street Racing
+     bookmarklet:
+       title: SR Smack Talk
+     
+   - action: sr_hitlist
+     url: http://apps.facebook.com/streetracinggame/hits.php?action=set&target_id=$ID
+     help: add $NAME to bounties in Street Racing
+     bookmarklet:
+       title: SR Bounty
+       
+   - action: p_invite
+     url: http://apps.facebook.com/piratesrule/recruit.php?action=create&ids[]=$ID&ref=name
+     help: send a request to $NAME to join your crew in Pirates
+     bookmarklet:
+       title: P Invite
+       
+   - action: p_switch
+     url: http://apps.facebook.com/piratesrule/stats.php?user=$ID
+     bookmarklet:
+       title: P Switch
+       code:  bookmarklets/switch_profile.js
+       help: Switch between a person's Facebook profile and their Pirates profile.
+       
+   - action: p_remove
+     url: http://apps.facebook.com/piratesrule/group.php?action=remove&user_id=$id
+     help: remove $NAME from your Pirates crew; costs $1000
+     bookmarklet:
+       title: P Remove
+       
+   - action: p_attack
+     url: http://apps.facebook.com/piratesrule/fight.php?opponent_id=$ID&action=attack
+     help: attack $NAME in Pirates
+     bookmarklet:
+       title: P Attack
+      
+   - action: p_punch
+     url: http://apps.facebook.com/piratesrule/fight.php?opponent_id=$ID&action=punch
+     help: sword duel $NAME in Pirates
+     bookmarklet:
+       title: P Sword Duel
+      
+   - action: p_hitlist
+     url: http://apps.facebook.com/piratesrule/hits.php?action=set&target_id=$ID
+     help: add $NAME to bounty list in Pirates
+     bookmarklet:
+       title: P Bounty
+       
+   - action: gb_add
+     url: http://apps.facebook.com/gangsterbattle/?re=$ID
+     help: 'add $NAME to your family in <a href="http://apps.facebook.com/gangsterbattle/">Gangster Battle</a>'
+     bookmarklet:
+       title: GB Add
+       
+   - action: sw_invite
+     url: http://apps.facebook.com/spacewarsgame/recruit.php?action=create&ids[]=$ID
+     help: invite $NAME to your fleet in Space Wars
+     bookmarklet:
+       title: SW Invite
+       
+   - action: sw_switch
+     url: http://apps.facebook.com/spacewarsgame/stats.php?user=$ID
+     bookmarklet:
+       title: SW Switch
+       code:  bookmarklets/switch_profile.js
+       help: Switch between a person's Facebook profile and their Space Wars profile.
+       
+   - action: sw_attack
+     url:  http://apps.facebook.com/spacewarsgame/fight.php?opponent_id=$ID&action=attack
+     help: challenge $NAME in Space Wars
+     bookmarklet:
+       title: SW Attack
+      
+   - action: sw_punch
+     url:  http://apps.facebook.com/spacewarsgame/fight.php?opponent_id=$ID&action=punch
+     help: torpedo $NAME in Space Wars
+     bookmarklet:
+       title: SW Torpedo
+      
+   - action: sw_hitlist
+     url:  http://apps.facebook.com/spacewarsgame/hits.php?action=set&target_id=$ID
+     help: add $NAME to bounties in Space Wars
+     bookmarklet:
+       title: SW Bounty
+       
+   - action: rw_add
+     url: http://apps.facebook.com/robotrevenge/recruit_accept.php?uid=$ID&ref=nf
+     help: 'add $NAME to your squad in <a href="http://apps.facebook.com/robotrevenge/">Robot Wars</a>'
+     bookmarklet:
+       title: RW Add
+       
+   - action: ca_add
+     url: http://apps.facebook.com/castle_age/recruit.php?action=create&ids[]=$ID
+     help: 'add $NAME to <a href="http://apps.facebook.com/castle_age/">Castle Age</a>'
+     bookmarklet:
+       title: CA Add
+       
+   - action: mafioso_add
+     url: http://apps.facebook.com/mafiosowar/home.php?inv=$ID
+     help: 'add $NAME to <a href="http://apps.facebook.com/mafiosowar/">Mafioso</a>'
+     bookmarklet:
+       title: Mafioso Add
+       
+   - action: mobwars_add
+     url: http://apps.facebook.com/mobwars/mob/do.php?join_id=$ID
+     help: 'add $NAME to <a href="http://apps.facebook.com/mobwars/">Mob Wars</a>'
+     bookmarklet:
+       title: Mob Add
+       
+   - action: rh_add
+     url: http://apps.facebook.com/robhood/home.php?inv=$ID
+     help: 'add $NAME to <a href="http://apps.facebook.com/robhood/">Robin Hood</a>'
+     bookmarklet:
+       title: RH Add
+    
+   - action: som_add
+     url: http://apps.facebook.com/schoolofmagic/Connection/Accept/$ID
+     help: 'add $NAME to <a href="http://apps.facebook.com/schoolofmagic/">School of Magic</a>'
+     bookmarklet:
+       title: SoM Add
+    
+- group: adders
+  title: Adders for various games
+  description: 'These bookmarklets add or invite people to various games from their Facebook profile. I haven\'t tested these thoroughly, or at all, so use at your own risk (as usual) and please <a href="/support/">report any problems</a>.'
+  default_bookmarklet_code: bookmarklets/user_action.js
+  actions_short:
+    som_add: [http://apps.facebook.com/schoolofmagic/Connection/Accept/$ID, School of Magic, SoM Add]
+    sg_add: [http://apps.facebook.com/playsexgames/?re=$ID&oi=10, Sex Games, SG Add]
+    bl_add: [http://apps.facebook.com/nightfallbloodlines/invite.php?action=create&ids[]=$ID, Bloodlines, BL Add]
+    k_add: [http://apps.facebook.com/knighted/?re=$ID&oi=10, Knighted, K Add]
+    vc_add: [http://apps.facebook.com/vikingclan/home/join/$ID/?t_1=feed&t_2=recruit, Viking Clan, VC Add]
+    sin_add: [http://apps.facebook.com/sindicate/Home.aspx?register-boss=$ID, Sindicate, SIN Add]
+    fw_add: [http://apps.facebook.com/fashionwarsgame/recruit.php?action=create&ids[]=$ID, Fashion Wars, FW Add]
+    dw_add: [http://apps.facebook.com/dragonwars/recruit.php?action=create&ids[]=$ID, Dragon Wars, DW Add]
+    gol_add: [http://apps.facebook.com/guardiansoflight/Connection/Accept/$ID, Guardians of Light, GoL Add]
+    wl_add: [http://apps.facebook.com/greatwarlords/Connection/Accept/$ID, Warlords, WL Add]
+    sl_add: [http://apps.facebook.com/sororitylife/link_invite.php?from=$ID, Sorority Life, SL Add]
+    mworld_add: [http://apps.facebook.com/mobworld/registry.php?fcuid=$ID&ref=url, Mob World, MWORLD Add]
+    r_add: [http://apps.facebook.com/robotico/status_invite.php?from=$ID, Robotico, R Add]
+    dw_add: [http://apps.facebook.com/dopecity/recruit.php?action=create&ids[]=$ID, Dope Wars, DW Add]
+    pl_add: [http://apps.facebook.com/prisonlockdowngame/recruit.php?action=create&ids[]=$ID, Prison Lockdown, PL Add]
+
+- group: viewers
+  title: Profile viewers for various games
+  description: 'These bookmarklets views a person\'s profile in various games. I haven\'t tested these thoroughly, so please <a href="/support/">report any problems</a>.'
+  default_bookmarklet_code: bookmarklets/user_action.js
+  actions_short:
+    ft_view: [http://apps.facebook.com/farmtown/play/?farm_id=$ID&ref=friends, Farm Town, FT View]
+    mc_view: [http://apps.facebook.com/virtualcity/$ID/default.aspx, My City, MC View]
