@@ -1,1 +1,0 @@
-javascript:f=function(s){return%20parseInt(document.getElementById('app10979261223_'+s).firstChild.data);};exp=f('user_experience');lev=f('exp_for_next_level');en=f('user_energy');left=lev-exp;alert('Experience%20needed:%20'+left+'\nCurrent%20energy:%20'+en+'\nPreferred%20exp/energy%20for%20jobs:%20'+(left/en).toFixed(2));
