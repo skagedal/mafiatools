@@ -1,0 +1,95 @@
+1 = Ebony Cigar    
+2 = Sky Cigar   
+3 = Rose Cigar
+4 = Ivory Cigar   
+5 = Turquoise Cigar   
+6 = Gold Cigar   
+7 = Royal Cigar 
+
+8 = Topaz Ring   
+9 = Opal Ring   
+10 = Amethyst Ring   
+11 = Emerald Ring   
+12 = Sapphire Ring   
+13 = Ruby Ring   
+14 = Diamond Ring
+
+15 = Warhol Painting   
+16 = Cezanne Painting
+17 = Matisse Painting
+18 = Van Gogh Painting   
+19 = Dali Painting   
+20 = Monet Painting   
+21 = Rembrandt Painting  
+
+22 = Rat Sculpture   
+23 = Sheep Sculpture   
+24 = Rooster Sculpture   
+25 = Monkey Sculpture
+26 = Tiger Sculpture   
+27 = Snake Sculpture   
+28 = Dragon Sculpture 
+
+29 = White Poker Chip   
+30 = Brown Poker Chip   
+31 = Red Poker Chip   
+32 = Blue Poker Chip   
+33 = Green Poker Chip   
+34 = Purple Poker Chip   
+35 = Gold Poker Chip 
+
+36 = Eight of Diamonds   
+37 = Nine of Diamonds   
+38 = Ten of Diamonds   
+39 = Jack of Diamonds   
+40 = Queen of Diamonds   
+41 = King of Diamonds   
+42 = Ace of Diamonds
+
+43 = Eight of Hearts   
+44 = Nine of Hearts   
+45 = Ten of Hearts   
+46 = Jack of Hearts   
+47 = Queen of Hearts   
+48 = King of Hearts   
+49 = Ace of Hearts
+
+50 = Eight of Clubs   
+51 = Nine of Clubs   
+52 = Ten of Clubs   
+53 = Jack of Clubs   
+54 = Queen of Clubs   
+55 = King of Clubs   
+56 = Ace of Clubs 
+
+57 = Eight of Spades   
+58 = Nine of Spades   
+59 = Ten of Spades   
+60 = Jack of Spades   
+61 = Queen of Spades   
+62 = King of Spades   
+63 = Ace of Spades 
+
+64 = Solid Tie   
+65 = Striped Tie   
+66 = Checked Tie   
+67 = Geometric Tie
+68 = Dot Tie   
+69 = Paisley Tie   
+70 = Knitted Tie 
+
+71 = Silver Cufflinks
+72 = Gold Cufflinks   
+73 = Amber Cufflinks   
+74 = Jasper Cufflinks   
+75 = Agate Cufflinks   
+76 = Onyx Cufflinks
+77 = Pearl Cufflinks 
+
+78 = Mill Reef   
+79 = Sea Bird   
+80 = Arkle   
+81 = Golden Miller   
+82 = St Simon   
+83 = Ormonde   
+84 = Eclipse 
