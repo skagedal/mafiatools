@@ -14,23 +14,23 @@
        title: Add to Mafia
        info:  Adding user with id $ID...
        help: >
-          Use this to add a friend who also plays Mafia Wars. Visit their Facebook profile page and then click "Add to Mafia". 
+          <strong><a href="http://www.facebook.com/note.php?note_id=90475864756">Currently not working!</a></strong> Use this to add a friend who also plays Mafia Wars. Visit their Facebook profile page and then click "Add to Mafia". 
           The page should now say "Adding user with id <em><tt>nnn</tt></em>..." and then go right into Mafia Wars. Then the person 
           should be added to your mafia, and Mafia Wars will say that the person has been added. Your mafia count, however, is not immediately updated.
           <p><strong>Note:</strong> You have to be Facebook friends with the person you're adding for this to work. 
           After adding the person to your mafia, you can safely 
-          remove the person as your Facebook friend, if you want. <strong>Currently not working!</strong></p>
+          remove the person as your Facebook friend, if you want. </p>
        
    - action: add_nw
      bookmarklet:
        title: "Add to Mafia: NW"
-       help:  Add to Mafia in a new window &ndash; like the above, but opens up your link in a new window.
+       help:  <strong><a href="http://www.facebook.com/note.php?note_id=90475864756">Currently not working!</a></strong> Add to Mafia in a new window &ndash; like the above, but opens up your link in a new window.
        code:  bookmarklets/add_to_mafia_nw.js   
       
    - action: add_and_remove
      bookmarklet:
        title: Add and Remove
-       help:  Add to Mafia in a new window, then open up the "Remove Friend" dialog. For the serious fast-adder.
+       help:  <strong><a href="http://www.facebook.com/note.php?note_id=90475864756">Currently not working!</a></strong> Add to Mafia in a new window, then open up the "Remove Friend" dialog. For the serious fast-adder.
        code:  bookmarklets/add_and_remove.js
      
    - action: switch
@@ -129,7 +129,7 @@
      bookmarklet:
        title: Add All
        code:  bookmarklets/add_all_unadded.js
-       help:  Tries to add all friends who aren't already in your mafia. Install bookmarklet, go to <a href="http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=recruit&xw_action=view">recruit page</a>, press bookmarklet. It will ask for a delay time between requests. Too low values of this might make Facebook think you're a spammer. Use at own risk, as usual. Does not work in Internet Explorer.
+       help:  <strong><a href="http://www.facebook.com/note.php?note_id=90475864756">Currently not working!</a></strong> Tries to add all friends who aren't already in your mafia. Install bookmarklet, go to <a href="http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=recruit&xw_action=view">recruit page</a>, press bookmarklet. It will ask for a delay time between requests. Too low values of this might make Facebook think you're a spammer. Use at own risk, as usual. Does not work in Internet Explorer.
        
    - action: jobcalc
      bookmarklet:
