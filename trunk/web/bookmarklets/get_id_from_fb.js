@@ -19,25 +19,11 @@
 
 /* Get ID from a Facebook profile */
 function get_id_from_fb() {
+    try {
 	var content = document.getElementById('profileimage');
 	match = /id=([0-9]+)/.exec(content.innerHTML);
-	//	if (match && match.length > 1)
-	    return match[1];
-
-	// Fall back on the old 
-	    /*
-	var url = location.href;
-	// If there are several matches, we want the last one because of the situations that look like this:
-	// http://www.facebook.com/profile.php?id=xxxx&ref=mf#/profile.php?id=yyyy - yyyy is the one we want
-	// This function returns the last match of the regular expression "re". 
-	function last(re) {
-	    var l = null;
-	    while (m = re.exec(url))
-		l = m;
-	    return l;
-	}
-	var m = last(/(?:profile|addfriend).php[?&]id=(\d+)/g) || last(/s.php[?&]k=\d+&id=(\d+)/g);
-
-	return m ? m[1] : null;
-	    */
+	return match[1];
+    } catch (e) {
+	return null;
+    }
 }
