@@ -19,7 +19,7 @@
           should be added to your mafia, and Mafia Wars will say that the person has been added. Your mafia count, however, is not immediately updated.
           <p><strong>Note:</strong> You have to be Facebook friends with the person you're adding for this to work. 
           After adding the person to your mafia, you can safely 
-          remove the person as your Facebook friend, if you want.</p>
+          remove the person as your Facebook friend, if you want. <strong>Currently not working!</strong></p>
        
    - action: add_nw
      bookmarklet:
