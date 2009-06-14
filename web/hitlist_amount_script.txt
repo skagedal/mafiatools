@@ -1,0 +1,13 @@
+<script type="text/javascript"><!--
+/* For the hitlisting-with-amount bookmarklet */
+function hitlist_amount() {
+	am = document.getElementById('hl_amount');
+	am.value = am.value.replace(/[^0-9]/g, '');
+
+	a = document.getElementById('bm_hl');
+	a.href = "javascript:amount=null;addhit=null;els=document.getElementById('app10979261223_createhit').getElementsByTagName('input');for(var i=0;i<els.length;i++){if(els[i].name=='amount')amount=els[i];if(els[i].name=='addhit')addhit=els[i];}if(amount&&addhit){amount.value="+am.value+";addhit.click();}else{alert('ERROR:%20Are%20you%20on%20a%20hitlist%20page?')}";
+	a.innerHTML = 'HL ' + am.value;
+	document.getElementById('hl_amount_span').innerHTML = am.value;
+}
+//-->
+</script>
