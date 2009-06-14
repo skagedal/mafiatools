@@ -312,7 +312,8 @@ function bhmt_url_link($url) {
 /* Log */
 
 function bhmt_get_log_filename() {
-  return get_local_settings()['logfile'];
+	 $settings = get_local_settings();
+	 return $settings['logfile'];
 }
 
 function bhmt_log($str) {
