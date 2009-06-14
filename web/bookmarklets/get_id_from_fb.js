@@ -19,11 +19,15 @@
 
 /* Get ID from a Facebook profile */
 function get_id_from_fb() {
-    try {
-	var content = document.getElementById('profileimage');
-	match = /id=([0-9]+)/.exec(content.innerHTML);
-	return match[1];
-    } catch (e) {
-	return null;
+    function f (expr) {
+	try {
+	    return /id=([0-9]+)/.exec(eval(expr))[1];
+	} catch (e) {
+	    return null;
+	}
     }
+
+    return f("document.getElementById('profileimage').innerHTML") 
+	|| f("document.getElementById('profile_name').parentNode.innerHTML") 
+	|| null;
 }
