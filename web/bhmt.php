@@ -359,6 +359,7 @@ $donators = array(
 	array('name' => '[LCN]MeanyMin'),
 	array('name' => 'Les Willett', 'url' => 'http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=stats&xw_action=view&user=1210820502'),
 	array('name' => '[WODB] Don Juan'),
+	array('name' => 'Bryan Richardson', 'url' => 'http://www.facebook.com/bryanhrichardson'),
 );
 
 function donator($don) {
