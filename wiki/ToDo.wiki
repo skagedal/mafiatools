@@ -29,6 +29,7 @@ Stuff to do, ideas and bugs.
   * Doesn't work in Cuba ([http://www.facebook.com/topic.php?uid=141473635789&topic=9981 topic])
  * *Other games:*
   * Street Racing "add all", some guy donated $5 USD for that... :)
+  * Multi-game "add all" ([http://www.facebook.com/topic.php?uid=141473635789&topic=10193 topic])
  * *General bookmarklet issues:*
   * IE can only handle 2053 chars in a url. – check for it!
   * Versions of bookmarklets that open in a different window ([http://www.facebook.com/topic.php?uid=141473635789&topic=9279 topic])
