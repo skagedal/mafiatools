@@ -6,9 +6,9 @@
 // 
 
 require_once 'facebook.php';
-require '../db.php';
-require '../sweet.php';
-require '../localsettings.php';
+require_once '../db.php';
+require_once '../sweet.php';
+require_once '../localsettings.php';
 
 $dbcon = db_connect();
 
