@@ -31,29 +31,29 @@ Stuff to do, ideas and bugs.
   * Street Racing "add all", some guy donated $5 USD for that... :)
  * *General bookmarklet issues:*
   * IE can only handle 2053 chars in a url. – check for it!
-  * Versions of bookmarklets that open in a different window (http://www.facebook.com/topic.php?uid=141473635789&topic=9279)
+  * Versions of bookmarklets that open in a different window ([http://www.facebook.com/topic.php?uid=141473635789&topic=9279 topic])
   * Download many bookmarklets at once: see https://www.squarefree.com/bookmarklets/importall.html
  * *Other tools:*
   * Hitlister - list of people that want to be hitlisted, settable through Facebook app
   * Wishlist adder
   * [http://www.facebook.com/profile.php?id=1223788605 Don Dingleberry]: How about a "bookmarklet" that selects a random recipient for a gift? Call it "random act of kindness" bookmarklet!
-  * Support for Mafia Wars on other networks (MySpace, Bebo) &ndash; suggested by [http://www.facebook.com/profile.php?id=1186235946 Jamie Durrand]
+  * Support for Mafia Wars on other networks (MySpace, Bebo) - suggested by [http://www.facebook.com/profile.php?id=1186235946 Jamie Durrand]
  * *Facebook tools:*
   * [http://www.facebook.com/profile.php?id=1223788605 Don Dingleberry]: A way to select ALL your friends to invite them to a group?
  * *Stuff for the web page:*
   * Write security advise/warning
   * Write "how to help"
   * FAQs:
-   * Why doesn't Switch Profile work on some people? (Or, Message) &ndash; security reasons
+   * Why doesn't Switch Profile work on some people? (Or, Message) - security reasons
    * I have a big mafia, the gifting page doesn't load...
   * Add link to http://www.youtube.com/user/kushphog
 
 == Bugs ==
- * "Analyze" sometimes get confused because there's another message before the fighting stats ([http://www.facebook.com/topic.php?uid=141473635789&topic=9897 topic]) &ndash; actually the problem is it needs to grab the stats off of the stats page: http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=stats&xw_action=view since it no longer shows on Home page for some people &ndash; do this with XHR and we can lose the "fight.py" page and go directly to Combat Calculator!
+ * "Analyze" sometimes get confused because there's another message before the fighting stats ([http://www.facebook.com/topic.php?uid=141473635789&topic=9897 topic]) - actually the problem is it needs to grab the stats off of the stats page: http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=stats&xw_action=view since it no longer shows on Home page for some people &ndash; do this with XHR and we can lose the "fight.py" page and go directly to Combat Calculator!
  * "Mike": check error recovery code (retry), add throttle ([http://www.facebook.com/topic.php?uid=141473635789&topic=9931 topic])
 
 == Done ==
- * [[URL shortening service]] - let an URL such as heartrate.se/attack/134134 lead to the attack page for the user with id 134134 (see [http://en.wikipedia.org/wiki/URL_redirection URL redirection])
+ * URL shortening service - let an URL such as heartrate.se/attack/134134 lead to the attack page for the user with id 134134 (see [http://en.wikipedia.org/wiki/URL_redirection URL redirection])
  * Remove friend: <tt>return wait_for_load(this, event, function() { show_removefriend_dialog("527551298", this, true, false, undefined, undefined, "profile_others"); return false; });</tt>
  * Some script that first adds to mafia then removes person from FB. Or maybe just FB-remove from Mafia profile. [http://www.facebook.com/topic.php?uid=141473635789&topic=9279 Thread]
  * "Analyze" takes the wrong text when you go back to get the stats, if you have an energy pack waiting
