@@ -1,0 +1,62 @@
+#summary To do-list for heartrate.se
+
+Stuff to do, ideas and bugs.
+
+== General list of TODO and various ideas ==
+ * *Mafia building and friend management:*
+  * Add to Mafia from friend requests page ([http://www.facebook.com/note.php?note_id=83031329756&comments comment from Faye])
+  * Let "Confirm All" put all people into a list (or have a seperate bookmarklet for it). ([http://www.facebook.com/topic.php?uid=141473635789&topic=9657 topic], [http://www.facebook.com/note.php?note_id=83031329756&comments comment from Jason Yonker])
+  * Let "Add All" ignore people in a specific list (if that's possible)
+  * Remove friends after adding to mafia ([http://www.facebook.com/note.php?note_id=83031329756&comments comment from Charles Ezzell])
+  * If they show Achievements (0) the account is inactive, since they get unlocked once you open the page for the first time. A bookmarklet to run through your Mafia list and delete all players with 0 achievements would be great to optimize the job help effects. 
+  * Clear all MW requests ([http://www.facebook.com/topic.php?uid=141473635789&topic=9951 topic])
+ * *User action bookmarklets:*
+  * Pages were bookmarklet should work:
+   * "Attack" pages, so you can just press "attack" bookmarklet again ([http://www.facebook.com/topic.php?uid=141473635789&topic=9800 topic])
+ * *Download mafia:*
+  * Include "is Facebook friend" column
+  * Go through all profile pages to get full name, achievements and other stats
+  * Diff tool ([http://www.facebook.com/edittopic.php?uid=141473635789&topic=9953&action=4&reply_to=56653 post 1], [http://www.facebook.com/edittopic.php?uid=141473635789&topic=9953&action=4&reply_to=57334 post 2])
+  * Include profile pic URL ([http://www.facebook.com/topic.php?uid=141473635789&topic=9953&post=56693#post56693 post])
+ * *Various bookmarklets:*
+  * Help all in your mafia ([http://www.facebook.com/note.php?note_id=83031329756&comments comment from Bob Brault])
+  * Tool that calculates Attack/Defense stats just by looking at the equipment pages. ([http://www.facebook.com/topic.php?uid=141473635789&topic=9429 topic])
+  * Do an action x number of times: Buy LEL, improve stats ([http://www.facebook.com/topic.php?uid=141473635789&topic=9672 topic])
+  * Attack all on a fighting page ([http://www.facebook.com/topic.php?uid=141473635789&topic=9679 topic])
+  * Do job requirements all in one click: Would work like this: you start on Boss or Consigliere levels, then hit your bookmarklet. It does the Rob an Electronics Store job until it gets a Camera, then moves to Obtain Compromising Photos. If it gets a BMP, it goes back to where you started, waiting for you to click on your desired job. If it doesn't, it starts over again. Keeps going until you run out of energy. ([http://www.facebook.com/topic.php?uid=141473635789&topic=10146 topic])
+ * *Mike:*
+  * Add Stop button, and/or stop after specific quantity ([http://www.facebook.com/topic.php?uid=141473635789&topic=9516 topic])
+  * Doesn't work in Cuba ([http://www.facebook.com/topic.php?uid=141473635789&topic=9981 topic])
+ * *Other games:*
+  * Street Racing "add all", some guy donated $5 USD for that... :)
+ * *General bookmarklet issues:*
+  * IE can only handle 2053 chars in a url. – check for it!
+  * Versions of bookmarklets that open in a different window (http://www.facebook.com/topic.php?uid=141473635789&topic=9279)
+  * Download many bookmarklets at once: see https://www.squarefree.com/bookmarklets/importall.html
+ * *Other tools:*
+  * Hitlister - list of people that want to be hitlisted, settable through Facebook app
+  * Wishlist adder
+  * [http://www.facebook.com/profile.php?id=1223788605 Don Dingleberry]: How about a "bookmarklet" that selects a random recipient for a gift? Call it "random act of kindness" bookmarklet!
+  * Support for Mafia Wars on other networks (MySpace, Bebo) &ndash; suggested by [http://www.facebook.com/profile.php?id=1186235946 Jamie Durrand]
+ * *Facebook tools:*
+  * [http://www.facebook.com/profile.php?id=1223788605 Don Dingleberry]: A way to select ALL your friends to invite them to a group?
+ * *Stuff for the web page:*
+  * Write security advise/warning
+  * Write "how to help"
+  * FAQs:
+   * Why doesn't Switch Profile work on some people? (Or, Message) &ndash; security reasons
+   * I have a big mafia, the gifting page doesn't load...
+  * Add link to http://www.youtube.com/user/kushphog
+
+== Bugs ==
+ * "Analyze" sometimes get confused because there's another message before the fighting stats ([http://www.facebook.com/topic.php?uid=141473635789&topic=9897 topic]) &ndash; actually the problem is it needs to grab the stats off of the stats page: http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=stats&xw_action=view since it no longer shows on Home page for some people &ndash; do this with XHR and we can lose the "fight.py" page and go directly to Combat Calculator!
+ * "Mike": check error recovery code (retry), add throttle ([http://www.facebook.com/topic.php?uid=141473635789&topic=9931 topic])
+
+== Done ==
+ * [[URL shortening service]] - let an URL such as heartrate.se/attack/134134 lead to the attack page for the user with id 134134 (see [http://en.wikipedia.org/wiki/URL_redirection URL redirection])
+ * Remove friend: <tt>return wait_for_load(this, event, function() { show_removefriend_dialog("527551298", this, true, false, undefined, undefined, "profile_others"); return false; });</tt>
+ * Some script that first adds to mafia then removes person from FB. Or maybe just FB-remove from Mafia profile. [http://www.facebook.com/topic.php?uid=141473635789&topic=9279 Thread]
+ * "Analyze" takes the wrong text when you go back to get the stats, if you have an energy pack waiting
+ * Any chance for a script that will calculate the ratios for all the jobs on a page? I normally work my way through the highest-energy jobs first, until I'm close to leveling, at which point I manually calculate the ratios to minimize the wait, but as I'm sure you know the ratios can change if you get a better Mastermind or Wheel Man. ([http://www.facebook.com/s.php?k=100000080&id=679765845 Max Handelsman]) (Spockholm's Mafia Exp)
+ * Support for other games
+ * Mafia administration - do what Mafia Wars themselves fail at, browsing your mafia, sorting by name or anything else, finding people easily.
