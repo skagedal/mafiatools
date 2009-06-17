@@ -24,6 +24,7 @@ Stuff to do, ideas and bugs.
   * Do an action x number of times: Buy LEL, improve stats ([http://www.facebook.com/topic.php?uid=141473635789&topic=9672 topic])
   * Attack all on a fighting page ([http://www.facebook.com/topic.php?uid=141473635789&topic=9679 topic])
   * Do job requirements all in one click: Would work like this: you start on Boss or Consigliere levels, then hit your bookmarklet. It does the Rob an Electronics Store job until it gets a Camera, then moves to Obtain Compromising Photos. If it gets a BMP, it goes back to where you started, waiting for you to click on your desired job. If it doesn't, it starts over again. Keeps going until you run out of energy. ([http://www.facebook.com/topic.php?uid=141473635789&topic=10146 topic])
+  * Deposit money in batches of $9 or C$9; this way, no interest is taken out. Not worth doing in NY, but possibly in Cuba (suggested by several in inbox).
  * *Mike:*
   * Add Stop button, and/or stop after specific quantity ([http://www.facebook.com/topic.php?uid=141473635789&topic=9516 topic])
   * Doesn't work in Cuba ([http://www.facebook.com/topic.php?uid=141473635789&topic=9981 topic])
