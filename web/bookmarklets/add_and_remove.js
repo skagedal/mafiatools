@@ -24,7 +24,7 @@ void(function(){
 id = get_id();
 
 if (id) {
-	window.open('http://apps.facebook.com/inthemafia/status_invite.php?from=' + id);
+	window.open('http://mwdirectfb10.zynga.com/mwfb/remote/html_server.php?xw_controller=friendbar&xw_action=send_add&fid=' + id);
 	show_removefriend_dialog(id, this, true, false, undefined, undefined, "profile_others");
 } else {
 	alert('Could not find an id! You need to be on a profile page for this to work.');

@@ -22,7 +22,7 @@
 id = get_id();
 
 if (id) {
-	void(window.open('http://apps.facebook.com/inthemafia/status_invite.php?from=' + id));
+	void(window.open('http://mwdirectfb10.zynga.com/mwfb/remote/html_server.php?xw_controller=friendbar&xw_action=send_add&fid=' + id));
 } else {
 	alert('Could not find an id! You need to be on a profile page for this to work.');
 }

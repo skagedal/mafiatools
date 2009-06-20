@@ -22,7 +22,10 @@ void (function () {
 {{INCLUDE xmlhttp.js}}
 
 var recruit_url = 'http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=recruit&xw_action=view';
-var add_url = 'http://apps.facebook.com/inthemafia/status_invite.php?from=';
+
+// THIS DOESN'T WORK, of course, because of "same origin policy". Need to figure out an apps.facebook.com adress...
+var add_url = 'http://mwdirectfb10.zynga.com/mwfb/remote/html_server.php?xw_controller=friendbar&xw_action=send_add&fid=';
+
 var mw_url = 'http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=stats&xw_action=view&user=';
 var fb_url = 'http://www.facebook.com/profile.php?id=';
 var friends_added = 0;
