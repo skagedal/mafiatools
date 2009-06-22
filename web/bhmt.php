@@ -361,6 +361,11 @@ $donators = array(
 	array('name' => '[WODB] Don Juan'),
 	array('name' => 'Bryan Richardson', 'url' => 'http://www.facebook.com/bryanhrichardson'),
 	array('name' => '[OMERTA] &#8734; Hec &#8734;', 'url' => 'http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=stats&xw_action=view&user=716675149'),
+	array('name' => '[JMG] Lucky O\'Lindy'),
+	array('name' => 'Rachel Ray', 'url' => 'http://www.facebook.com/profile.php?id=1308224851'),
+	array('name' => 'Mistress of Ravens'),
+	array('name' => '[MFF]Gangsta G'),
+	
 );
 
 function donator($don) {
