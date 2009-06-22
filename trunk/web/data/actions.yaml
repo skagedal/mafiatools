@@ -14,7 +14,7 @@
        title: Add to Mafia
        info:  Adding user with id $ID...
        help: >
-          <strong>Use this to add a friend who also plays Mafia Wars. Visit their Facebook profile page and then click "Add to Mafia". 
+          Use this to add a friend who also plays Mafia Wars. Visit their Facebook profile page and then click "Add to Mafia". 
           The page should now say "Adding user with id <em><tt>nnn</tt></em>..." and then go right into Mafia Wars. Then the person 
           should be added to your mafia, and Mafia Wars will say that the person has been added. Your mafia count, however, is not immediately updated.
           <p><strong>Note:</strong> You have to be Facebook friends with the person you're adding for this to work. 
