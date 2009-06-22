@@ -267,7 +267,7 @@ Thank you for <a href="/donate/">donating</a>, <?php echo bhmt_donator_random();
 </div>
 <?php if (!is_development()): ?>
 <div class="left_column_item">
-<!-- Facebook Badge START --><a href="http://www.facebook.com/people/Bobby-Heartrate/1463977030" title="Bobby Heartrate&#039;s Facebook profile" target="_TOP"><img src="http://badge.facebook.com/badge/1463977030.347.1346701637.png" alt="Bobby Heartrate&#039;s Facebook profile" style="border: 0px;" /></a><!-- Facebook Badge END -->
+<!-- Facebook Badge START --><img src="http://badge.facebook.com/badge/1463977030.347.1346701637.png" alt="Bobby Heartrate&#039;s Facebook profile" style="border: 0px;" /><!-- Facebook Badge END -->
 </div> <!-- left_column_item -->
 <div class="left_column_item">
 
