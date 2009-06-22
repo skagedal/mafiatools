@@ -18,7 +18,6 @@
 
 # Set the default handler.
 # DirectoryIndex index.php
-# Alias /new/news /hsphere/local/home/apoteketapan/heartrate.se/news.php
 
 php_flag magic_quotes_gpc Off
 
