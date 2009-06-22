@@ -360,6 +360,7 @@ $donators = array(
 	array('name' => 'Les Willett', 'url' => 'http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=stats&xw_action=view&user=1210820502'),
 	array('name' => '[WODB] Don Juan'),
 	array('name' => 'Bryan Richardson', 'url' => 'http://www.facebook.com/bryanhrichardson'),
+	array('name' => '[OMERTA] &#8734; Hec &#8734;', 'url' => 'http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=stats&xw_action=view&user=716675149'),
 );
 
 function donator($don) {
