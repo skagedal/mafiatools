@@ -47,6 +47,8 @@ bm_row('vw_add_all', bm_load('bookmarklets/vw_add_all_unadded.js'),
       'Install bookmark, go to <a href="http://apps.facebook.com/vampiresgame/recruit.php">Vampire Wars recruit page</a>, press bookmarklet.');
 */
 
+	bm_row('test', bm_load('bookmarklets/testclass.js'), 'Test', '');
+
 bm_table_end();
 
 bhmt_body_end();

@@ -173,7 +173,7 @@
      bookmarklet:
        title: Remove from FB
        code:  bookmarklets/fb_remove.js
-       help:  Use this to remove someone from your Faceebok friends. At the moment, this only works on Facebook profiles, so all it does is saves you a little bit of scrolling. 
+       help:  Use this to remove someone from your Facebook friends. At the moment, this only works on Facebook profiles, so all it does is saves you a little bit of scrolling. 
        
    - action: message
      url: http://www.facebook.com/inbox/?compose&id=$ID
