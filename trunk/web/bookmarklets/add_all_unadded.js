@@ -22,9 +22,7 @@ void (function () {
 {{INCLUDE xmlhttp.js}}
 
 var recruit_url = 'http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=recruit&xw_action=view';
-
-// THIS DOESN'T WORK, of course, because of "same origin policy". Need to figure out an apps.facebook.com adress...
-var add_url = 'http://mwdirectfb10.zynga.com/mwfb/remote/html_server.php?xw_controller=friendbar&xw_action=send_add&fid=';
+var add_url = 'http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=friendbar&xw_action=send_add&fid=';
 
 var mw_url = 'http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=stats&xw_action=view&user=';
 var fb_url = 'http://www.facebook.com/profile.php?id=';
@@ -80,19 +78,22 @@ function request_next() {
 function state_change() {
     if (xmlHTTP.readyState == 4) {	// 4 = "loaded"
 	if (xmlHTTP.status == 200) {	// 200 = OK
-	    s = xmlHTTP.responseText;
+	    //	    s = xmlHTTP.responseText;
+	    /* In the days of old, we could get these messages... 
 	    if (m = /You have added (.+) to your mafia/.exec(s)) {
 		friends_added++;
 		msg('Added ' + mwlink(m[1]) + ' AKA ' + fblink() + '.');
 	    } else if (m = /You are already part of (.+)\'s mafia/.exec(s)) {
 		msg('Already added ' + mwlink(m[1]) + ' AKA ' + fblink() + '.');
-	    } else if (/app10979261223_content_row/.test(s) || /window\.location\.replace/.test(s)) {
-		// If Mafia Wars loaded, but we didn't get the message, we probably have a user who doesn't play Mafia Wars.
-		msg('Tried adding ' + fblink() + ' with unknown result.');
-	    } else {
+	    } else  */
+
+	    //	    if (/app10979261223_content_row/.test(s) || /window\.location\.replace/.test(s)) {
+	    msg('Added ' + fblink() + ' (' + mwlink('MW') + ')');
+		/*	    } else {
 		retry('Unknown response');
 		return;
-	    }
+		}*/
+
 	    retries = 0;
 	    friends = friends.slice(1);
 	    request_next();
