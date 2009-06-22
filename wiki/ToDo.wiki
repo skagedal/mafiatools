@@ -2,6 +2,13 @@
 
 Stuff to do, ideas and bugs.
 
+== Add All versions ==
+ * [http://home.comcast.net/~quadratic/ Quadratic Equation]
+ * [http://echk.com/mw/ Sergey Shushunov] ([http://www.facebook.com/note.php?note_id=119877440399 note])
+
+Also see:
+ * [http://vern.com/mwtools/ Vern's Mafia Tools]
+
 == General list of TODO and various ideas ==
  * *Mafia building and friend management:*
   * Add to Mafia from friend requests page ([http://www.facebook.com/note.php?note_id=83031329756&comments comment from Faye])
