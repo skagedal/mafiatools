@@ -365,6 +365,7 @@ $donators = array(
 	array('name' => 'Rachel Ray', 'url' => 'http://www.facebook.com/profile.php?id=1308224851'),
 	array('name' => 'Mistress of Ravens'),
 	array('name' => '[MFF]Gangsta G'),
+	array('name' => 'B.', 'url' => 'http://www.facebook.com/brian.cerny'),
 	
 );
 
