@@ -88,7 +88,7 @@ function state_change() {
 	    } else  */
 
 	    //	    if (/app10979261223_content_row/.test(s) || /window\.location\.replace/.test(s)) {
-	    msg('Added ' + fblink() + ' (' + mwlink('MW') + ')');
+	    msg('Tried adding ' + fblink() + ' (' + mwlink('MW') + ')');
 		/*	    } else {
 		retry('Unknown response');
 		return;
