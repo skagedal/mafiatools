@@ -189,7 +189,7 @@ function gift_main() {
 	gift_start();
 //	echo "<p>Key: $found_key</p>";
 	echo('<p>All set! Now give '.gift_format_item($gift, $amount).' to '.$user->format_link().' with the link below.</p>');
-	echo("<p class=\"smalltext\"><strong>Two things to note:</strong><ol><li class=\"smalltext\">Sometimes you get the page that says: \"Error while loading page from Mafia Wars. There are still a few kinks Facebook and the makers of Mafia Wars, yada yada...\" &ndash; but the gift is still sent. </li><li class=\"smalltext\">If you get \"A mysterious error has occured\", you probably need to update your secret key. <a href=\"/faq/#gift_secret_key\">Here are instructions.</a> If several users are using the same computer, you need to do this when you switch users.</li></ol>");
+	echo("<p class=\"smalltext\"><strong>Two things to note:</strong><ol><li class=\"smalltext\">Sometimes you get the page that says: \"Error while loading page from Mafia Wars. There are still a few kinks Facebook and the makers of Mafia Wars, yada yada...\" &ndash; but the gift is still sent. </li><li>Sometimes gifts just disappear. This seems to be because of bugs in Mafia Wars. You've been warned.</li><li class=\"smalltext\">If you get \"A mysterious error has occured\", you probably need to update your secret key. <a href=\"/faq/#gift_secret_key\">Here are instructions.</a> If several users are using the same computer, you need to do this when you switch users.</li></ol>");
 	echo '<div style="background-color: #ffd; border: 1px solid black;">';
 
 	bhmt_url_link($url);
