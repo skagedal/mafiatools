@@ -27,7 +27,7 @@ function get_id_from_fb() {
 	}
     }
 
-    return f("document.getElementById('profileimage').innerHTML") 
+    return f("document.getElementById('profileimage').parentNode.innerHTML") 
 	|| f("document.getElementById('profile_name').parentNode.innerHTML") 
 	|| null;
 }
