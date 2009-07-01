@@ -23,7 +23,7 @@
 
 /* TO DO: rewrite using class constructor syntax */
 
-function http_new (set_status) {
+function Http () {
 	function make_statechange_fun(self, on_ok) {
 		return function() {
 			if (self.xhr.readyState == 4) {		// 4 == "loaded"
@@ -38,31 +38,30 @@ function http_new (set_status) {
 		};
 	}
 
-	return {
-		set_status: set_status,
+	// Method 1: Works in all new browsers
+	if (window.XMLHttpRequest)
+		this.xhr = XMLHttpRequest();
+	// Method 2: Works in IE 5 & 6
+	if (window.ActiveXObject)
+		this.xhr = ActiveXObject("Microsoft.XMLHTTP");
 
-		xhr:	// Method 1: works in all new browsers
-			window.XMLHttpReqest ? new XMLHttpRequest() :	
-			// Method 2: works in IE 5 & 6
-			window.ActiveXObject ? new ActiveXObject("Microsoft.XMLHTTP") : null,
+	this.get = function (url, pagename, on_ok) {
+		this.set_status('Getting ' + pagename);
+		this.pagename = pagename;
+		this.retries = 0;
+		this.xhr.onreadystatechange = make_statechange_fun(this, on_ok);
+		this.xhr.open("GET", url, true);
+		this.xhr.send(null);
+	}
 
-		get: function (url, pagename, on_ok) {
-			this.set_status('Getting ' + pagename);
-			this.pagename = pagename;
-			this.retries = 0;
-			this.xhr.onreadystatechange = make_statechange_fun(this, on_ok);
-			this.xhr.open("GET", url, true);
+	this.retry = function () {
+		this.retries++;
+		if (retries > 10) {
+			this.set_status('Giving up getting ' + this.pagename);
+		} else {
+			this.set_status('Getting ' + this.pagename + '; retry #' + retries + '...');
 			this.xhr.send(null);
 		}
-
-		retry: function () {
-			this.retries++;
-			if (retries > 10) {
-				this.set_status('Giving up getting ' + this.pagename);
-			} else {
-				this.set_status('Getting ' + this.pagename + '; retry #' + retries + '...');
-				this.xhr.send(null);
-			}
-		}
 	}
+
 }

@@ -366,7 +366,12 @@ $donators = array(
 	array('name' => 'Mistress of Ravens'),
 	array('name' => '[MFF]Gangsta G'),
 	array('name' => 'B.', 'url' => 'http://www.facebook.com/brian.cerny'),
-	
+	array('name' => '[SOP] Sam the Slammer'),
+	array('name' => 'Samantha the Seductress', 'url' => 'http://apps.facebook.com/inthemafia/remote/html_server.php?xw_controller=stats&xw_exp_sig=1c6af15dde2afe61fdbf341cc449a3f6&xw_time=1246118333&xw_action=view&xw_city=1&tmp=f70be6778496ddc9bc067e76a1ecba52&user=1005067322'),
+	array('name' => 'Grace NodHead'),
+	array('name' => 'Don Omatopoeia'),
+	array('name' => 'Nancy Stuart AKA Nancy "The Boots" Sinatra'),
+
 );
 
 function donator($don) {
